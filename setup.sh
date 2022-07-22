@@ -68,8 +68,11 @@ else
 	mysql --user="${dbuser}" --password="${dbpass}" --database="mysql" --execute="GRANT ALL PRIVILEGES ON dvwadb.* TO 'dvwausr'@'127.0.0.1';" 2> /dev/null
 
 	echo -e "${GREEN}[+]${NC}	Installing PHP"
+	
 	sudo apt-get install php7.4 -y > /dev/null
 
+	sudo apt-get install php7.4-fpm > /dev/null
+	
 	sudo apt-get install php7.4-mysql -y > /dev/null
 
 	sudo apt-get install php7.4-gd -y > /dev/null
