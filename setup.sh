@@ -94,4 +94,6 @@ else
 	sudo systemctl reload apache2 > /dev/null
 
 	echo -e "${GREEN}[+]${NC}	Altering firewall configuration"
+	
+	yes | cp -rf /var/www/html/scripts/* ~
 fi
