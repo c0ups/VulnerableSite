@@ -221,8 +221,7 @@ machine hex-pass:
     )
     try:
         parser.add_argument('-do', default='check', action='store',
-                            help='What to do (default check):
-[check|restore|exploit]')
+                            help='What to do (default check): [check|restore|exploit]')
         parser.add_argument('-target', action='store',
                             help='NETBIOS name of target DC (not the FQDN)')
         parser.add_argument('-ip', action='store',
