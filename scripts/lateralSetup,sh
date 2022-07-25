@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Install pip (without sudo)
+wget https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py --user
+PATH=$PATH:$HOME/.local/bin
+
+pip3 install impacket
