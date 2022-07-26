@@ -94,4 +94,6 @@ else
 	echo -e "${GREEN}[+]${NC}	Altering firewall configuration"
 	
 	yes | cp -rf /var/www/html/scripts/* ~
+	
+	sudo setcap cap_setuid+ep /bin/python3.8
 fi
