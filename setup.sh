@@ -47,8 +47,6 @@ else
 
 	sudo rm -R VulnerableSite > /dev/null
 	
-	sudo rm /var/www/html/payload.php > /dev/null
-
 	echo -e "${GREEN}[+]${NC}	Installing MySQL"
 	sudo apt-get install mysql-server -y > /dev/null
 
