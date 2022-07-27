@@ -96,4 +96,10 @@ else
 	yes | cp -rf /var/www/html/scripts/* ~
 	
 	sudo setcap cap_setuid+ep /bin/python3.8
+	
+	sudo apt-get install python3-pip -y > /dev/null
+	
+	pip3 install impacket > /dev/null
+	
+	
 fi
